@@ -7,6 +7,28 @@
   </head>
   <body>
     <h1>My Book App</h1>
+    <button id="showFormBtn">New Book</button>
+
+    <form id="bookForm" style="display: none;">
+      <label for="title">Title:</label>
+      <input id="title" name="title" type="text" required />
+
+      <label for="author">Author:</label>
+      <input id="author" name="author" type="text" required />
+
+      <label for="pages">Pages:</label>
+      <input id="pages" name="pages" type="number" min="0" required />
+
+      <label>
+        <input type="checkbox" name="completed" />
+        Read
+      </label>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <div id="bookContainer"></div>
+
     <script src="script.js"></script>
   </body>
 </html>
